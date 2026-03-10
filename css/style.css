@@ -2,6 +2,20 @@ body {
   background-color: #80ff80;
 }
 
+.contenedor {
+	position: relative;
+	width: 100%;
+	height: auto;	
+}
+
+.img-home {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	width: 48px;
+	height: 48px;
+}
+
 .player {
   height: 95vh;
   display: flex;

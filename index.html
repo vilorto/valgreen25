@@ -4,44 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>&#9829; Valgreen</title>
+  <title>&#9829; Valgreen 2025</title>
 
   <!-- Cargar el archivo de estilo CSS personalizado -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
 </head>
 <body>
-  <div class="player">
-    <div class="details">
-      <div class="track-art"></div>
-      <div class="track-name">T&iacute;tulo</div>
-      <div class="track-artist">MMMM AAAA</div>
-      <div class="now-playing">0 / 0</div>
-    </div>
-    <div class="buttons">
-      <div class="prev-track" onclick="prevTrack()">
-				<img class="backwardIcon" id="icono" src="svg/step-backward.svg" alt="Step Backward">
+	<div class="contenedor">
+		<a href="https://vilorto.github.io/valgreen/"><img class="img-home" src="svg/home.svg" alt="Home" title="Home"></a>
+		<div class="player">
+			<div class="details">
+				<div class="track-art"></div>
+				<div class="track-name">T&iacute;tulo</div>
+				<div class="track-artist">MMMM AAAA</div>
+				<div class="now-playing">0 / 0</div>
 			</div>
-      <div class="playpause-track" onclick="playpauseTrack()">
-				<img class="playpauseIcon" id="iconoControl" src="svg/play.svg" alt="Play/Pause">
+			<div class="buttons">
+				<div class="prev-track" onclick="prevTrack()">
+					<img class="backwardIcon" id="icono" src="svg/step-backward.svg" alt="Step Backward">
+				</div>
+				<div class="playpause-track" onclick="playpauseTrack()">
+					<img class="playpauseIcon" id="iconoControl" src="svg/play.svg" alt="Play/Pause">
+				</div>
+				<div class="next-track" onclick="nextTrack()">
+					<img class="forwardIcon" id="icono" src="svg/step-forward.svg" alt="Step Forward">
+				</div>
 			</div>
-      <div class="next-track" onclick="nextTrack()">
-				<img class="forwardIcon" id="icono" src="svg/step-forward.svg" alt="Step Forward">
+			<div class="slider_container">
+				<div class="current-time">00:00</div>
+				<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+				<div class="total-duration">00:00</div>
 			</div>
-    </div>
-    <div class="slider_container">
-      <div class="current-time">00:00</div>
-      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-      <div class="total-duration">00:00</div>
-    </div>
-    <div class="slider_container">
-			<img class="volumeIcon" src="svg/volume-down.svg" alt="Volume Down">
-      <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
-			<img class="volumeIcon" src="svg/volume-up.svg" alt="Volume Up">
-    </div>
-  </div>
-
-  <!-- Cargar el script principal para el player -->
-  <script src="js/main.js"></script>
+			<div class="slider_container">
+				<img class="volumeIcon" src="svg/volume-down.svg" alt="Volume Down">
+				<input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+				<img class="volumeIcon" src="svg/volume-up.svg" alt="Volume Up">
+			</div>
+		</div>
+	
+		<!-- Cargar el script principal para el player -->
+		<script src="js/main.js"></script>
+	</div>
 </body>
 </html>
