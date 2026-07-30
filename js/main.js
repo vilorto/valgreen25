@@ -95,9 +95,15 @@ let track_list = [
 	},
   {
     name: "Solo a ti",
-    artist: "Junio 2025",
+    artist: "Junio 2025 (a)",
     image: "img/solo-a-ti.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
     path: "music/Solo a ti.mp3"
+  },
+  {
+    name: "Paz al partir",
+    artist: "Junio 2025 (b)",
+    image: "img/paz-al-partir.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Paz al partir.mp3"
   },
   {
     name: "I Want To Know What Love Is",
