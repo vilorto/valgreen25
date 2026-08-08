@@ -21,96 +21,114 @@ let curr_track = document.createElement('audio');
 
 // Define las pistas que se deben reproducir
 let track_list = [
+	{	
+		name: "Saltó mi Otoño",
+    artist: "Septiembre 2026 (a)",
+    image: "img/salto-mi-otoño.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Saltó mi Otoño.mp3"
+  },
 	{
-		name: "Feliz Navidad",
-		artist: "Diciembre 2025 (a)",
-		image: "img/feliz-navidad.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Feliz Navidad.mp3"
+		name: "Yo te quería a ti",
+		artist: "Septiembre 2026 (b)",
+		image: "img/yo-te-queria-a-ti.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Yo te queria a ti.mp3"
 	},
 	{
-		name: "Aquí estaré",
-		artist: "Diciembre 2025 (b)",
-		image: "img/aqui-estare.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Aquí estaré.mp3"
+		name: "Tu nombre",
+		artist: "Agosto 2026 (a)",
+		image: "img/tu-nombre.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Tu nombre.mp3"
 	},
 	{
-		name: "Maravillosa y lejana",
-		artist: "Noviembre 2025 (a)",
-		image: "img/maravillosa-y-lejana.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Maravillosa y lejana.mp3"
-	},
-	{
-		name: "Desde dentro",
-		artist: "Noviembre 2025 (b)",
-		image: "img/desde-dentro.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Desde dentro.mp3"
-	},
-	{
-		name: "Niña de mis besos",
-		artist: "Octubre 2025 (a)",
-		image: "img/niña-de-mis-besos.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Niña de mis besos.mp3"
+		name: "Triste es saber",
+		artist: "Agosto 2026 (b)",
+		image: "img/triste-es-saber.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Triste es saber.mp3"
 	},
 	{	
-		name: "No sé",
-    artist: "Octubre 2025 (b)",
-    image: "img/no-se.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/No sé.mp3"
-  },
-  {
-    name: "Amor inolvidable",
-    artist: "Septiembre 2025 (a)",
-    image: "img/amor-inolvidable.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Amor inolvidable.mp3"
+		name: "Te dejé ir",
+    artist: "Julio 2026 (a)",
+    image: "img/te-deje-ir.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Te dejé ir.mp3"
   },
 	{
-		name: "Nunca he tenido",
-		artist: "Septiembre 2025 (b)",
-		image: "img/nunca-he-tenido.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Nunca he tenido.mp3"
-	},
-  {
-    name: "Como poder olvidarte",
-    artist: "Agosto 2025 (a)",
-    image: "img/como-poder-olvidarte.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Como poder olvidarte.mp3"
-  },
-  {
-    name: "Volvimos a encontrarnos",
-    artist: "Agosto 2025 (b)",
-    image: "img/volvimos-a-encontrarnos.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Volvimos a encontrarnos.mp3"
-  },
-	{
-		name: "Manifiesto",
-		artist: "Julio 2025 (a)",
-		image: "img/manifiesto.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Manifiesto.mp3"
+		name: "Ecos del pasado",
+		artist: "Julio 2026 (b)",
+		image: "img/ecos-del-pasado.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Ecos del pasado.mp3"
 	},
 	{
-		name: "Destinados a no ser",
-		artist: "Julio 2025 (b)",
-		image: "img/destinados-a-no-ser.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Destinados a no ser.mp3"
+		name: "Lo siento amor",
+		artist: "Junio 2026 (a)",
+		image: "img/lo-siento-amor.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Lo siento amor.mp3"
 	},
-  {
-    name: "Solo a ti",
-    artist: "Junio 2025 (a)",
-    image: "img/solo-a-ti.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Solo a ti.mp3"
+	{
+		name: "Sombras de tu bienestar",
+		artist: "Junio 2026 (b)",
+		image: "img/sombras-de-tu-bienestar.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Sombras de tu bienestar.mp3"
+	},
+	{	
+		name: "El primer amor nunca se va",
+    artist: "Mayo 2026 (a)",
+    image: "img/el-primer-amor-nunca-se-va.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/El primer amor nunca se va.mp3"
   },
-  {
-    name: "Paz al partir",
-    artist: "Junio 2025 (b)",
-    image: "img/paz-al-partir.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Paz al partir.mp3"
+	{
+		name: "Cuán efímero es el amor",
+		artist: "Mayo 2026 (b)",
+		image: "img/cuan-efimero-es-el-amor.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Cuán efímero es el amor.mp3"
+	},
+	{
+		name: "Te quise de verdad",
+		artist: "Abril 2026 (a)",
+		image: "img/te-quise-de-verdad.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Te quise de verdad.mp3"
+	},
+	{
+		name: "Evocación",
+		artist: "Abril 2026 (b)",
+		image: "img/evocacion.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Evocación.mp3"
+	},
+	{
+		name: "Otra vez Marzo",
+		artist: "Marzo 2026 (a)",
+		image: "img/otra-vez-marzo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Otra vez Marzo.mp3"
+	},
+	{
+		name: "Monse",
+		artist: "Marzo 2026 (b)",
+		image: "img/monse.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Monse.mp3"
+	},
+	{	
+		name: "Si al menos",
+    artist: "Febrero 2026 (a)",
+    image: "img/si-al-menos.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Si al menos.mp3"
   },
-  {
-    name: "I Want To Know What Love Is",
-    artist: "Foreigner",
-    image: "img/I-Want-To-Know-What-Love-Is.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/I Want To Know What Love Is.mp3"
+	{
+		name: "No me dejaste de gustar",
+		artist: "Febrero 2026 (b)",
+		image: "img/no-me-dejaste-de-gustar.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/No me dejaste de gustar.mp3"
+	},
+	{	
+		name: "Ya no soy lo que fui",
+    artist: "Enero 2026 (a)",
+    image: "img/ya-no-soy-lo-que-fui.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Ya no soy lo que fui.mp3"
   },
+	{
+		name: "Desde la distancia",
+		artist: "Enero 2026 (b)",
+		image: "img/desde-la-distancia.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+		path: "music/Desde la distancia.mp3"
+	},
 ];
 
 function random_bg_color() {
@@ -227,5 +245,3 @@ function seekUpdate() {
     total_duration.textContent = durationMinutes + ":" + durationSeconds;
   }
 }
-
-
