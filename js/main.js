@@ -21,18 +21,6 @@ let curr_track = document.createElement('audio');
 
 // Define las pistas que se deben reproducir
 let track_list = [
-	{	
-		name: "Saltó mi Otoño",
-    artist: "Septiembre 2026 (a)",
-    image: "img/salto-mi-otoño.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-    path: "music/Saltó mi Otoño.mp3"
-  },
-	{
-		name: "Yo te quería a ti",
-		artist: "Septiembre 2026 (b)",
-		image: "img/yo-te-queria-a-ti.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
-		path: "music/Yo te queria a ti.mp3"
-	},
 	{
 		name: "Tu nombre",
 		artist: "Agosto 2026 (a)",
