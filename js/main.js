@@ -117,6 +117,12 @@ let track_list = [
     image: "img/tu-brillas-yo-no.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
     path: "music/Tú brillas yo no.mp3"
   },
+  {
+    name: "Caminos separados",
+    artist: "Extra III",
+    image: "img/caminos-separados.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Caminos separados.mp3"
+  },
 ];
 
 function random_bg_color() {
