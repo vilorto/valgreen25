@@ -123,6 +123,12 @@ let track_list = [
     image: "img/caminos-separados.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
     path: "music/Caminos separados.mp3"
   },
+  {
+    name: "Te echo de menos",
+    artist: "Extra IV",
+    image: "img/te-echo-de-menos.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Te echo de menos.mp3"
+  },
 ];
 
 function random_bg_color() {
