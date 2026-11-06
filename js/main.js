@@ -129,6 +129,18 @@ let track_list = [
     image: "img/te-echo-de-menos.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
     path: "music/Te echo de menos.mp3"
   },
+  {
+    name: "Nostalgia",
+    artist: "Extra V",
+    image: "img/nostalgia.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Nostalgia.mp3"
+  },
+  {
+    name: "Te recuerdo con amor",
+    artist: "Extra VI",
+    image: "img/te-recuerdo-con-amor.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Te recuerdo con amor.mp3"
+  },
 ];
 
 function random_bg_color() {
