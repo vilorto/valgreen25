@@ -141,6 +141,18 @@ let track_list = [
     image: "img/te-recuerdo-con-amor.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
     path: "music/Te recuerdo con amor.mp3"
   },
+  {
+    name: "Perdóname cariño",
+    artist: "Extra VII",
+    image: "img/perdoname-cariño.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Perdóname cariño.mp3"
+  },
+  {
+    name: "Que valga la pena",
+    artist: "Extra VIII",
+    image: "img/que-valga-la-pena.jpg?auto=compress&cs=tinysrgb&dpr=3&h=256&w=256",
+    path: "music/Que valga la pena.mp3"
+  },
 ];
 
 function random_bg_color() {
